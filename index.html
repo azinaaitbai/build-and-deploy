@@ -4,47 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech2etc Ecommerce Tutorial</title>
-    <!-- <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-
+    <title>GOS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <!-- were it is -->
   <body>
     <section id="header">
-      <a href="index.html"><img src="img/logo.png" class="logo" alt="" /></a>
-
+      <a href="index.html">Bayden.</a>
       <div>
         <ul id="navbar">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li id="lg-bag">
-            <a href="cart.html"
-              ><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-            </a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#banner">Modal</a></li>
+          <li><a href="#contact">Contact</a></li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
       </div>
       <div id="mobile">
         <a href="cart.html"
-          ><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-        </a>
+          ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+        ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
+      <button onclick="toggleDarkMode()">Mode</button>
     </section>
 
-    <section id="hero">
+    <div class="container" id="home">
+      <div class="mySlides">
+        <img src="img/fon1.png" style="width: 100%; height: 56rem" />
+      </div>
+      <div class="mySlides">
+        <img src="img/fon2.png" style="width: 100%; height: 56rem" />
+      </div>
+      <div class="mySlides">
+        <img src="img/fon3.png" style="width: 100%; height: 56rem" />
+      </div>
+      <div class="mySlides">
+        <img src="img/fon4.png" style="width: 100%; height: 56rem" />
+      </div>
+      <div class="mySlides">
+        <img src="img/fon5.png" style="width: 100%; height: 56rem" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <section class="position" id="hero">
       <h4>Trade-in-offer</h4>
       <h2>Super value deals</h2>
       <h1>On all products</h1>
@@ -52,370 +56,115 @@
       <button>Shop now</button>
     </section>
 
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img src="img/features/f1.png" alt="" />
-        <h6>Free Shipping</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f2.png" alt="" />
-        <h6>Online Order</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f3.png" alt="" />
-        <h6>Save Money</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f4.png" alt="" />
-        <h6>Promotions</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f5.png" alt="" />
-        <h6>Happy Sell</h6>
-      </div>
-      <div class="fe-box">
-        <img src="img/features/f6.png" alt="" />
-        <h6>F24/7 Support</h6>
-      </div>
-    </section>
+    <div id="products" class="tabs">
+      <button class="tablink active" data-tab="Tab1">All Products</button>
+      <button class="tablink" data-tab="Tab2">New Arrivals</button>
+      <button class="tablink" data-tab="Tab3">Best Sellers</button>
+    </div>
 
-    <section id="product1" class="section-p1">
-      <h2>Featured Products</h2>
-      <p>Summer Collection New Morden Design</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="img/products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+    <div id="Tab1" class="tabcontent" style="display: block">
+      <h3>All Products</h3>
+      <div class="products">
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/867273-800-800?width=800&height=800&aspect=true"
+            alt="Sneaker 1"
+          />
+          <p>Sneaker 1</p>
         </div>
-
-        <div class="pro">
-          <img src="img/products/f2.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/730416-800-800?width=800&height=800&aspect=true"
+            alt="Sneaker 2"
+          />
+          <p>Sneaker 2</p>
         </div>
-
-        <div class="pro">
-          <img src="img/products/f3.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/f4.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/f5.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/f6.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/f7.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/f8.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/155416-800-800?width=800&height=800&aspect=true"
+            alt="Sneaker 3"
+          />
+          <p>Sneaker 3</p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+      <h3>New Arrivals</h3>
+      <div class="products">
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/867273-800-800?width=800&height=800&aspect=true"
+            alt="New Sneaker 1"
+          />
+          <p>New Sneaker 1</p>
+        </div>
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/378695-800-800?width=800&height=800&aspect=true"
+            alt="New Sneaker 2"
+          />
+          <p>New Sneaker 2</p>
+        </div>
+        <div class="product">
+          <img
+            src="https://nikearprod.vtexassets.com/arquivos/ids/813127-800-800?width=800&height=800&aspect=true"
+            alt="New Sneaker 3"
+          />
+          <p>New Sneaker 3</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+      <h3>Best Sellers</h3>
+      <div class="products">
+        <div class="product">
+          <img
+            src="https://www.kickz.com/dw/image/v2/BGQV_PRD/on/demandware.static/-/Sites-kickz-master-catalog/default/dw692aec9b/images/large/nike-ZOOM_LEBRON_NXXT_GEN_AMPD_SIERRA-ARMORY_NAVY_LT_SILVER_SAIL_MTLC_SILVER-1.jpg?sw=330&q=95"
+            alt="Best Sneaker 1"
+          />
+          <p>Best Sneaker 1</p>
+        </div>
+        <div class="product">
+          <img
+            src="https://www.kickz.com/dw/image/v2/BGQV_PRD/on/demandware.static/-/Sites-kickz-master-catalog/default/dw91f660f3/images/large/puma-All_Pro_Nitro_Dennis_Schroeder-gold-1.jpg?sw=330&q=95"
+            alt="Best Sneaker 2"
+          />
+          <p>Best Sneaker 2</p>
+        </div>
+        <div class="product">
+          <img
+            src="https://www.kickz.com/dw/image/v2/BGQV_PRD/on/demandware.static/-/Sites-kickz-master-catalog/default/dw682e0524/images/large/AIR_JORDAN_4_OXIDIZED_GREEN-WHITE_OXIDIZED_GREEN_WHITE_NEUTRAL_GREY-1.jpg?sw=330&q=95"
+            alt="Best Sneaker 3"
+          />
+          <p>Best Sneaker 3</p>
+        </div>
+      </div>
+    </div>
 
     <section id="banner" class="section-m1">
+      <h2>Modal</h2>
       <h4>Repair Services</h4>
-      <h2>Up to <span>70% Off</span> - All t-shirts & Accessories</h2>
-      <button class="normal" onclick="openPopup()">Explore More</button>
+      <h2>Up to <span>70% Off</span> - All cars</h2>
+      <button class="normal" id="exploreBtn">Explore More</button>
     </section>
 
-    <section id="product1" class="section-p1">
-      <h2>New Arrivals</h2>
-      <p>Summer Collection New Morden Design</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="img/products/n1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n2.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n3.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n4.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n5.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n6.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n7.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="img/products/n8.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="sm-banner" class="section-p1">
-      <div class="banner-box">
-        <h4>crazy deals</h4>
-        <h2>buy 1 get 1 free</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Learn more</button>
-      </div>
-      <div class="banner-box banner-box2">
-        <h4>spring/summer</h4>
-        <h2>umcoming season</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Collection</button>
-      </div>
-    </section>
-
-    <section id="banner3">
-      <div class="banner-box">
-        <h2>SEASONAL SALE</h2>
-        <h3>Winter Collection -50% OFF</h3>
-      </div>
-      <div class="banner-box banner-box2">
-        <h2>NEW FOOTWEAR COLLECTION</h2>
-        <h3>Spring / Summer 2022</h3>
-      </div>
-      <div class="banner-box banner-box3">
-        <h2>T-SHIRTS</h2>
-        <h3>New Trendy Prints</h3>
-      </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Sign Up For Newsletters</h4>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
         <p>
-          Get E-mail updates about our latest shop and
-          <span>special offers.</span>
+          Discover Your Perfect Ride Today! Browse Our Selection of Quality Cars
+          for Sale.
         </p>
       </div>
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button class="normal">Sign up</button>
-      </div>
-    </section>
+    </div>
 
-    <footer class="section-p1">
+    <footer class="section-p1" id="about">
       <div class="col">
-        <img class="logo" src="img/logo.png" alt="" />
+        <h2>Bayden.</h2>
         <h4>Contact</h4>
         <p>
           <strong>Address:</strong> 562 Wellington Road, Street 32, San
@@ -456,11 +205,11 @@
         <h4>Install App</h4>
         <p>From App Store or Google Play</p>
         <div class="row">
-          <img src="img/pay/app.jpg" alt="" />
-          <img src="img/pay/play.jpg" alt="" />
+          <img src="img/pay/app.jpg" alt="App Store" />
+          <img src="img/pay/play.jpg" alt="Google Play" />
         </div>
         <p>Secured Payment Gateways</p>
-        <img src="img/pay/pay.png" alt="" />
+        <img src="img/pay/pay.png" alt="Payment Gateways" />
       </div>
 
       <div class="copyright">
@@ -468,6 +217,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+      applyDarkModeOnLoad();
+    </script>
   </body>
 </html>
